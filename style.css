@@ -1,0 +1,589 @@
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    height: 100hv;
+}
+
+.conten-1,
+.conten-2,
+.conten-3 {
+    display: none;
+}
+
+.nama-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.gif {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif-image {
+    width: 80%;
+}
+
+.nama-container h5 {
+    margin-bottom: -10px;
+    color: #1d1d1d;
+    font-size: 15px;
+    font-family: Georgia, serif;
+}
+
+.nama-container h3 {
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Forever Brush Script', cursive;
+    font-style: italic;
+    color: #000;
+}
+
+.batang {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.home {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; /* atau tinggi sesuai tampilanmu */
+}
+
+/* Efek love jatuh */
+.heart {
+  position: absolute;
+  top: 0;
+  color: #ff7ab8;
+  font-size: 20px;
+  opacity: 0.8;
+  pointer-events: none; /* supaya tidak mengganggu klik tombol */
+  animation: fall 5s linear forwards;
+  z-index: 1; /* di atas background tapi di bawah konten utama */
+}
+
+/* Animasi jatuh */
+@keyframes fall {
+  0% {
+    transform: translateY(-10px) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.8) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Konten utama di atas efek love */
+.nama-container {
+  position: relative;
+  z-index: 2; /* pastikan teks dan tombol tetap di atas love */
+}
+
+
+.button-next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#lanjutButton {
+    width: 120px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.274);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.438);
+    backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+
+}
+
+.button-next button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.lampu {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.img-lampu {
+    height: calc(100vh * 0.15);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.gambar-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.img-1 {
+    height: calc(100vh * 0.25);
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.kipas {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.img-kipas {
+    height: calc(100vh * 0.25);
+}
+
+.isi-conten-1 {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.isi-conten-1 h3 {
+    font-family: acme, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    animation: fadeIn 4s ease-in-out;
+}
+
+.isi-conten-1 h5 {
+    font-family: serif;
+    font-size: 20px;
+    color: #1d1d1d;
+    font-style: italic;
+    margin-top: -10px;
+    animation: fadeIn 5s ease-in-out;
+}
+
+.ucapan {
+    display: flex;
+    align-items: center;
+    width: calc(100vw * 0.50);
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.img-ucapan {
+    height: calc(100vh * 0.30);
+    margin-left: 20px;
+    animation: fadeIn 6s ease-in-out;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.363);
+}
+
+.ucapan h5 {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    color: #1d1d1d;
+    font-style: normal;
+    text-align: justify;
+    text-justify: inter-word;
+    animation: fadeIn 7s ease-in-out;
+}
+
+.button-1 {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.1);
+    backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    animation: fadeIn 4s ease-in-out;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.button-1 button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-galery {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: calc(100vw * 0.5);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.363);
+}
+
+.container-galery h3 {
+    font-family: 'Forever Brush Script', cursive;
+    font-style: italic;
+    font-size: 23px;
+    font-weight: bold;
+    color: #000;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.img-galery {
+    width: 100%;
+    height: calc(100vh * 0.20);
+    object-fit: cover;
+    display: block;
+    cursor: pointer;
+}
+
+
+.img-galery {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.img-galery:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(3px);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    object-fit: contain;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.img-pot {
+    height: calc(100vh * 0.20);
+    margin-bottom: -4px;
+    margin-left: 15px;
+}
+
+.img-cat {
+    height: calc(100vh * 0.12);
+    margin-bottom: -11px;
+    margin-left: -5px;
+}
+
+.button-2 {
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(51, 51, 51, 0.1);
+    backdrop-filter: blur(6.8px);
+    border: 1px solid rgba(255, 255, 255, 0.66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button-2 button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.container-conten-3 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    z-index: 1;
+}
+
+.card-container {
+  perspective: 1500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  position: relative;
+  width: 50%;
+  height: calc(100vh * 0.70);
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #e90e33, #f0798f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transform-origin: left;
+  transform: rotateY(0deg);
+  transition: transform 1s ease-in-out;
+}
+
+.cover h2 {
+  margin: 0;
+  font-size: 2em;
+  color: white;
+}
+
+.cover p {
+  color: white;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.inside {
+  position: relative; /* penting agar .sampul absolut mengacu ke sini */
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  backface-visibility: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 20px;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  text-align: justify;
+  opacity: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.479);
+  transition: opacity 0.6s ease-in-out;
+}
+
+/* sembunyikan scrollbar */
+.inside::-webkit-scrollbar { display: none; }
+.inside { -ms-overflow-style: none; scrollbar-width: none; }
+
+.sampul {
+  position: absolute;
+  top: 20px;   /* sesuai padding atas */
+  left: 20px;  /* sesuai padding kiri */
+  right: 20px; /* sesuai padding kanan */
+  bottom: 20px;/* sesuai padding bawah */
+  background-color: #0c0c0c46;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+
+.card.open .cover {
+  transform: rotateY(-180deg);
+}
+
+.card.open .inside {
+  opacity: 1;
+  transition-delay: 0.6s;
+}
+
+.card h3 {
+  font-family: acme, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.card p {
+  font-size: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .img-batang {
+        height: calc(100vh * 0.20);
+    }
+
+    .img-1 {
+        height: calc(100vh * 0.15);
+    }
+
+    .img-lampu {
+        height: calc(100vh * 0.10);
+    }
+
+    .img-kipas {
+        height: calc(100vh * 0.20);
+    }
+
+    .isi-conten-1 {
+        top: 20%;
+    }
+
+    .isi-conten-1 h3 {
+        font-size: 25px;
+    }
+
+    .isi-conten-1 h5 {
+        font-size: 18px;
+    }
+
+    .ucapan {
+        display: grid;
+        place-items: center;
+        width: calc(100vw * 0.90);
+    }
+
+    .img-ucapan {
+        height: calc(100vh * 0.30);
+        margin: 0;
+    }
+
+    .ucapan h5 {
+        font-size: 11px;
+    }
+
+    .container-galery h3 {
+        font-size: 20px;
+    }
+
+    .img-galery {
+        height: calc(100vh * 0.16);
+    }
+
+    .img-pot {
+        height: calc(100vh * 0.18);
+        margin-left: 5px;
+    }
+
+    .container-conten-3 {
+        width: calc(100vw* 0.90);
+    }
+
+    .card {
+        width: 90%;
+        height: calc(100vh* 0.80);
+    }
+
+    .bunga-atas {
+        left: -10%;
+    }
+
+    .bunga-bawah {
+        bottom: -16%;
+        left: -8%;
+    }
+
+    .bunga-atas-kanan {
+        top: -20%;
+        right: -12%;
+    }
+
+    .bunga-bawah-kanan {
+        bottom: -18%;
+        right: -30%;
+    }
+
+    .img-bunga-atas-kanan,
+    .img-bunga-bawah {
+        height: calc(100vh * 0.30);
+    }
+
+    .img-bunga-bawah-kanan {
+        height: calc(100vh * 0.45);
+    }
+
+    .card p {
+        font-size: 16px;
+        margin-top: -4px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .container-galery {
+        width: calc(100vw* 0.90);
+        top: 45%;
+    }
+}
