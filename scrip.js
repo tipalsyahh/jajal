@@ -141,3 +141,4 @@ function createFallingHearts() {
 
 // Jalankan love jatuh terus-menerus
 setInterval(createFallingHearts, 400);
+
