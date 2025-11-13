@@ -376,6 +376,13 @@ html {
     height: calc(100vh * 0.30);
 }
 
+.bunga-kiri {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh * 0.25);
+}
+
 .bunga-kanan {
     position: fixed;
     top: 0;
@@ -385,8 +392,8 @@ html {
 
 .bunga-bawah {
     position: fixed;
-    bottom: 0;
-    height: calc(100vh * 0.18);
+  bottom: 0;
+  height: calc(100vh * 0.18);
 }
 
 .container-conten-3 {
@@ -617,6 +624,17 @@ font-family: 'Luckiest Guy', cursive;
         height: calc(100vh * 0.18);
         margin-left: 5px;
     }
+
+    .bunga-kanan,
+    .bunga-kiri {
+        height: calc(100vh * 0.18);
+    }
+
+    .bunga-bawah {
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100vh * 0.15);
+}
 
     .container-conten-3 {
         width: calc(100vw* 0.90);
