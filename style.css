@@ -369,6 +369,26 @@ html {
     cursor: pointer;
 }
 
+.balon {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: calc(100vh * 0.30);
+}
+
+.bunga-kanan {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: calc(100vh * 0.25);
+}
+
+.bunga-bawah {
+    position: fixed;
+    bottom: 0;
+    height: calc(100vh * 0.18);
+}
+
 .container-conten-3 {
     position: fixed;
     top: 50%;
@@ -452,7 +472,7 @@ font-family: 'Luckiest Guy', cursive;
 }
 
 .tulis p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -472,6 +492,7 @@ font-family: 'Luckiest Guy', cursive;
   box-sizing: border-box;
   text-align: justify;
   opacity: 0;
+  background-color: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.479);
   transition: opacity 0.6s ease-in-out;
 }
@@ -603,7 +624,7 @@ font-family: 'Luckiest Guy', cursive;
 
     .card {
         width: 90%;
-        height: calc(100vh* 0.70);
+        height: calc(100vh* 0.60);
     }
 
     .img-sakura {
